@@ -1,0 +1,23 @@
+# Depends
+import("graphics")
+import("grDevices")
+import("stats")
+import("utils")
+
+# Imports
+importFrom("methods", "is")
+
+# Exports (GEP)
+export("GEP.interface", "GEP.process", "designFile")
+export("read.abif", "read.fsa", "align.fsa", "peaks.fsa")
+export("model", "train", "classify")
+export("wav2RGB")
+S3method("plot", "fsaModel")
+S3method("plot", "fsa")
+S3method("print", "fsa")
+
+# Exports (fusions)
+export("fusions.process")
+export("read.sanger")
+S3method("plot", "sanger")
+
